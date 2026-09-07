@@ -22,7 +22,7 @@ export default function NotesPage() {
       <section className={`${container} pt-[120px] pb-[135px] min-h-[570px] max-tablet:pt-[90px] max-tablet:pb-[95px] max-tablet:min-h-0`}>
         <Eyebrow>Notes from the journey</Eyebrow>
         <h1 className="m-0 text-ink font-medium tracking-[-0.1em] leading-[0.91] max-w-[840px] text-[clamp(4rem,10vw,9rem)] max-tablet:text-[clamp(3.8rem,17vw,7rem)]">
-          The first entry<br /><em className="text-blue not-italic">in a long story.</em>
+          The first entry<br /><em className="text-blue not-italic">in a much longer story.</em>
         </h1>
         <p className="max-w-[570px] ml-[32%] mt-[34px] text-muted text-lg leading-[1.6] max-tablet:ml-0">A public notebook for the questions, decisions, and working theories that shape Doyuni over time. It starts here, with one entry.</p>
       </section>
@@ -48,12 +48,14 @@ export default function NotesPage() {
         </div>
       </section>
 
-      <section className={`${container} flex items-end justify-between gap-[30px] pt-[90px] pb-[110px] bg-blue-soft border-t border-line max-tablet:items-start max-tablet:flex-col max-tablet:pt-[75px] max-tablet:pb-[80px]`}>
-        <div>
-          <Eyebrow>Keep the signal close</Eyebrow>
-          <h2 className="m-0 text-[clamp(3.5rem,7vw,6.8rem)] leading-[0.93] tracking-[-0.095em] font-medium">Occasional notes.<br /><em className="text-blue not-italic">No performance.</em></h2>
+      <section className="bg-blue-soft border-t border-line">
+        <div className={`${container} flex items-end justify-between gap-[30px] pt-[90px] pb-[110px] max-tablet:items-start max-tablet:flex-col max-tablet:pt-[75px] max-tablet:pb-[80px]`}>
+          <div>
+            <Eyebrow>Keep the signal close</Eyebrow>
+            <h2 className="m-0 text-[clamp(3.5rem,7vw,6.8rem)] leading-[0.93] tracking-[-0.095em] font-medium">Occasional notes.<br /><em className="text-blue not-italic">No performance.</em></h2>
+          </div>
+          <a className={`${button} ${buttonPrimary}`} href="mailto:muse@doyuni.com?subject=Follow%20Doyuni%20notes">Ask to follow <span aria-hidden="true">↗</span></a>
         </div>
-        <a className={`${button} ${buttonPrimary}`} href="mailto:muse@doyuni.com?subject=Follow%20Doyuni%20notes">Ask to follow <span aria-hidden="true">↗</span></a>
       </section>
     </PageFrame>
   );

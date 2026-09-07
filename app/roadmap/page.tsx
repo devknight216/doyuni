@@ -7,7 +7,7 @@ const stages = [
   { number: '04', stage: 'The reason to grow', title: 'Improve the world', description: 'Use scale responsibly. Make knowledge, creativity, opportunity, and better tools available to more people.', tags: ['Impact', 'Access', 'Future'], accent: 'coral' },
 ];
 
-const accentColor: Record<string, string> = { blue: 'text-blue', violet: 'text-[#7754df]', lime: 'text-[#668800]', coral: '' };
+const accentColor: Record<string, string> = { blue: 'text-blue', violet: 'text-[#7754df]', lime: 'text-[#668800]', coral: 'text-coral' };
 
 export default function RoadmapPage() {
   return (
