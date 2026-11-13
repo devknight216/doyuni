@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Doyuni — A vision in progress',
-  description: 'Doyuni is a long-term vision for exploring what comes next and building whatever matters—products, services, or technology not yet invented.',
+  title: 'Doyuni — Startup idea log',
+  description: 'A running, public log of startup ideas explored, analyzed, and tracked over time before any of them becomes a company.',
   icons: { icon: '/favicon.svg' },
 };
 

@@ -1,6 +1,6 @@
-# Doyuni main website
+# Doyuni idea log
 
-Static Next.js vision website for `doyuni.com`. It does not use a database or server-side API. The site presents Doyuni as an early independent project with a long-term ambition to become a major company — not tied to any one industry, whether that ends up being products, services, or technology not yet invented.
+Static Next.js site for `doyuni.com`. No database or server-side API — it's a public notebook for startup ideas explored (often with an AI chat) before any of them becomes a real company.
 
 ## Run locally
 
@@ -15,16 +15,14 @@ pnpm dev
 pnpm build
 ```
 
-The static export is generated in `out/`. The site is ready for Vercel or another static host. Add `doyuni.com` as the production domain in the host, and keep the existing app on `tailor.doyuni.com`.
+The static export is generated in `out/`. Ready for Vercel or another static host.
 
 ## Pages
 
-- `/` — landing page
-- `/about/` — studio approach and principles
-- `/roadmap/` — roadmap and focus areas
-- `/notes/` — static articles and notes
-- `/contact/` — contact details
+- `/` — landing page with status counts and the most recent ideas
+- `/ideas/` — full list, filterable by status
+- `/ideas/[slug]/` — one idea's full write-up
 
-## Visual effect
+## Adding an idea
 
-The landing page includes a small raw Three.js globe, built from real land geometry (Natural Earth, 110m resolution) with glowing arcs animating between points. It's drag-to-rotate, uses low-power rendering, a capped pixel ratio, and pauses when the section is not visible or the tab is hidden. This keeps the effect appropriate for an early site on a Vercel free plan.
+Edit [data/ideas.ts](data/ideas.ts) directly — no CMS, no admin UI. Copy the `example-idea` object, give it a unique `slug`, and fill in the fields. `sections` is open-ended: add, rename, or drop headings to match whatever an AI chat actually analyzed for that idea (market, competition, risks, business model, why now, next steps, ...). Set `status` to `exploring`, `validated`, `parked`, or `dropped` as your thinking evolves, then commit and redeploy.
